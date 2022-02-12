@@ -11,12 +11,21 @@ nav .icon-carnival {
 }
 
 #get-your-ticket {
-  padding: 4em 0;
+  padding: 3em 0;
   margin-bottom: 20em;
 }
 
+#get-your-ticket .temp {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #get-your-ticket .social-media a {
-  margin-top: 2em;
   font-size: 2rem;
   text-decoration: none;
   color: black;
@@ -25,6 +34,7 @@ nav .icon-carnival {
 #get-your-ticket .social-media div {
   -webkit-transition: 1s;
   transition: 1s;
+  margin: auto;
   position: relative;
 }
 

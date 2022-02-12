@@ -14,13 +14,19 @@ nav {
 }
 
 #get-your-ticket {
-    padding: 4em 0;
+    padding: 3em 0;
     margin-bottom: 20em;
+
+    .temp {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+
+    }
 
     .social-media {
 
         a {
-            margin-top: 2em;
             font-size: 2rem;
             text-decoration: none;
             color: black;
@@ -28,6 +34,7 @@ nav {
 
         div {
             transition: 1s;
+            margin: auto;
             position: relative;
 
             &:hover {
