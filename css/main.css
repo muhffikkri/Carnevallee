@@ -15,5 +15,10 @@
   #home .image {
     display: none;
   }
+  #content .m-ord {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
