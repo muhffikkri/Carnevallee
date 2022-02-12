@@ -1,0 +1,14 @@
+.people-illustration {
+  max-width: 75%;
+}
+
+#content .pl {
+  padding-top: 4em;
+}
+
+@media screen and (max-width: 425px) {
+  #home .image {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
