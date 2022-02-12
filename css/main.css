@@ -2,8 +2,13 @@
   max-width: 75%;
 }
 
-#content .pl {
-  padding-top: 4em;
+#content {
+  margin-top: 2em;
+}
+
+#get-your-ticket {
+  margin-top: 5em;
+  margin-bottom: 40em;
 }
 
 @media screen and (max-width: 425px) {
