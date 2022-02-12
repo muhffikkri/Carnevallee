@@ -2,47 +2,71 @@
     max-width: 75%;
 }
 
+nav {
+    .icon-carnival {
+        max-width: 25px;
+    }
+}
+
 #content {
     margin-top: 2em;
 
-
-    // .row {
-    //     margin-top: 1em;
-    // }
-
-    // .talent-bio {
-    //     padding-top: 1.4em;
-    // }
 }
 
 #get-your-ticket {
     padding: 4em 0;
     margin-bottom: 20em;
 
-    .social-media a {
-        font-size: 1.5em;
-        text-decoration: none;
-        color: black;
-    }
+    .social-media {
 
-    .social-media div {
-        transition: 1s;
-    }
+        a {
+            margin-top: 2em;
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+        }
 
-    .social-media div:hover {
-        transform: translateY(10px);
+        div {
+            transition: 1s;
+            position: relative;
+
+            &:hover {
+                transform: translateY(10px);
+            }
+
+            &::before {
+                content: "";
+                width: 0;
+                position: absolute;
+                background-color: #0077b5;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+        }
     }
-    
 }
 
 @media screen and (max-width: 425px) {
+
     #home .image {
         display: none;
     }
 
     #content .m-ord {
-        order: 1;
+        order: 100;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #content .m-ord {
+        order: 100;
     }
 }
-    
-

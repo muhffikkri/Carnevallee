@@ -2,6 +2,10 @@
   max-width: 75%;
 }
 
+nav .icon-carnival {
+  max-width: 25px;
+}
+
 #content {
   margin-top: 2em;
 }
@@ -12,7 +16,8 @@
 }
 
 #get-your-ticket .social-media a {
-  font-size: 1.5em;
+  margin-top: 2em;
+  font-size: 2rem;
   text-decoration: none;
   color: black;
 }
@@ -20,6 +25,7 @@
 #get-your-ticket .social-media div {
   -webkit-transition: 1s;
   transition: 1s;
+  position: relative;
 }
 
 #get-your-ticket .social-media div:hover {
@@ -27,14 +33,38 @@
           transform: translateY(10px);
 }
 
+#get-your-ticket .social-media div::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  background-color: #0077b5;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+}
+
+#get-your-ticket .social-media div:hover::before {
+  width: 100%;
+}
+
 @media screen and (max-width: 425px) {
   #home .image {
     display: none;
   }
   #content .m-ord {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 101;
+        -ms-flex-order: 100;
+            order: 100;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #content .m-ord {
+    -webkit-box-ordinal-group: 101;
+        -ms-flex-order: 100;
+            order: 100;
   }
 }
 /*# sourceMappingURL=main.css.map */
