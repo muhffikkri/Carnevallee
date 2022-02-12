@@ -1,12 +1,11 @@
-.people-illustration {
-    max-width: 75%;
+#home {
+
+    .people-illustration {
+        max-width: 75%;
+    }
+
 }
 
-nav {
-    .icon-carnival {
-        max-width: 25px;
-    }
-}
 
 #content {
     margin-top: 2em;
@@ -16,12 +15,10 @@ nav {
 #get-your-ticket {
     padding: 3em 0;
     margin-bottom: 20em;
-
-    .temp {
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-
+    height: 40vw;
+    
+    .container {
+        height: 100%;
     }
 
     .social-media {
@@ -68,6 +65,12 @@ nav {
 
     #content .m-ord {
         order: 100;
+    }
+
+    #get-your-ticket {
+        .container {
+            margin-top: 4em;
+        }
     }
 
 }

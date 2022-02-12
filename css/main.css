@@ -1,9 +1,5 @@
-.people-illustration {
+#home .people-illustration {
   max-width: 75%;
-}
-
-nav .icon-carnival {
-  max-width: 25px;
 }
 
 #content {
@@ -13,16 +9,11 @@ nav .icon-carnival {
 #get-your-ticket {
   padding: 3em 0;
   margin-bottom: 20em;
+  height: 40vw;
 }
 
-#get-your-ticket .temp {
-  height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#get-your-ticket .container {
+  height: 100%;
 }
 
 #get-your-ticket .social-media a {
@@ -67,6 +58,9 @@ nav .icon-carnival {
     -webkit-box-ordinal-group: 101;
         -ms-flex-order: 100;
             order: 100;
+  }
+  #get-your-ticket .container {
+    margin-top: 4em;
   }
 }
 
