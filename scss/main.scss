@@ -16,8 +16,23 @@
 }
 
 #get-your-ticket {
-    margin-top: 5em;
-    margin-bottom: 40em;
+    padding: 4em 0;
+    margin-bottom: 20em;
+
+    .social-media a {
+        font-size: 1.5em;
+        text-decoration: none;
+        color: black;
+    }
+
+    .social-media div {
+        transition: 1s;
+    }
+
+    .social-media div:hover {
+        transform: translateY(10px);
+    }
+    
 }
 
 @media screen and (max-width: 425px) {
@@ -30,3 +45,4 @@
     }
 }
     
+

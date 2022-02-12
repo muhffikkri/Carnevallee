@@ -7,8 +7,24 @@
 }
 
 #get-your-ticket {
-  margin-top: 5em;
-  margin-bottom: 40em;
+  padding: 4em 0;
+  margin-bottom: 20em;
+}
+
+#get-your-ticket .social-media a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+#get-your-ticket .social-media div {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#get-your-ticket .social-media div:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 @media screen and (max-width: 425px) {
