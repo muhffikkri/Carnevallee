@@ -2,7 +2,7 @@ $(window).scroll(function () {
   const wScroll = $(this).scrollTop();
 
   // our class
-  if (wScroll > $("#our-class").offset().top - 250) {
+  if (wScroll > $("#our-class").offset().top - 400) {
       $("#our-class .container .thumb").each(function(i) {
         setTimeout(function () {
             $("#our-class .container .thumb").eq(i).addClass("show");
@@ -10,4 +10,10 @@ $(window).scroll(function () {
     });
   }
   
+    
+  
+  console.log(wScroll);
+  if(wScroll < 5) {
+      console.log("hello");
+  }
 });

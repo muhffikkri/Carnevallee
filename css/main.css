@@ -10,6 +10,36 @@ body {
   margin-top: 2em;
 }
 
+#content .talent-bio a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin: auto;
+  position: relative;
+}
+
+#content .talent-bio a:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#content .talent-bio a::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  background-color: #0077b5;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+}
+
+#content .talent-bio a:hover::before {
+  width: 100%;
+}
+
 #get-your-ticket {
   padding: 3em 0;
   margin-bottom: 20em;
@@ -79,6 +109,12 @@ body {
   }
   #get-your-ticket .container {
     margin-top: 4em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #content .m-ord {
+    margin-top: 1em;
   }
 }
 

@@ -15,6 +15,37 @@ body {
 #content {
     margin-top: 2em;
 
+    .talent-bio {
+
+        a {
+            text-decoration: none;
+            color: black;
+            transition: 1s;
+            margin: auto;
+            position: relative;
+
+            &:hover {
+                transform: translateY(10px);
+            }
+
+            &::before {
+                content: "";
+                width: 0;
+                position: absolute;
+                background-color: #0077b5;
+                bottom: -3px;
+                left: 0;
+                height: 2px;
+                transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+        }
+    
+    }
 }
 
 #get-your-ticket {
@@ -80,7 +111,7 @@ body {
     
 }
 
-
+// tambahin margin top pas layar udah kecil
 
 @media screen and (max-width: 425px) {
 
@@ -98,6 +129,18 @@ body {
         }
     }
 
+}
+
+@media screen and (max-width: 576px) {
+
+    #content {
+
+        .m-ord {
+            margin-top: 1em;
+        }
+
+        
+    }
 }
 
 @media screen and (max-width: 768px) {
