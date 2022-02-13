@@ -2,7 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-
 #home {
 
     .people-illustration {
@@ -44,15 +43,15 @@ body {
             }
 
         }
-    
+
     }
 }
 
 #get-your-ticket {
-    padding: 3em 0;
+    padding: 1em 0;
     margin-bottom: 20em;
     height: 40vw;
-    
+
     .container {
         height: 100%;
     }
@@ -94,13 +93,13 @@ body {
 }
 
 #our-class {
-    
+
     .container {
-        
+
         .thumb {
             opacity: 0;
             transform: translate(0, -40px);
-            transition: all .8s;
+            transition: all .5s;
 
             &.show {
                 opacity: 1;
@@ -108,12 +107,24 @@ body {
             }
         }
     }
-    
+
+}
+
+.nav-transform {
+    transition: all .8s;
+}
+
+.strikethrough {
+    text-decoration: line-through;
 }
 
 // tambahin margin top pas layar udah kecil
 
 @media screen and (max-width: 425px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     #home .image {
         display: none;
@@ -133,17 +144,26 @@ body {
 
 @media screen and (max-width: 576px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     #content {
 
         .m-ord {
             margin-top: 1em;
         }
 
-        
+
     }
 }
 
 @media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     #content .m-ord {
         order: 100;
     }

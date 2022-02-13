@@ -41,7 +41,7 @@ body {
 }
 
 #get-your-ticket {
-  padding: 3em 0;
+  padding: 1em 0;
   margin-bottom: 20em;
   height: 40vw;
 }
@@ -88,8 +88,8 @@ body {
   opacity: 0;
   -webkit-transform: translate(0, -40px);
           transform: translate(0, -40px);
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 #our-class .container .thumb.show {
@@ -98,7 +98,19 @@ body {
           transform: translate(0, 0);
 }
 
+.nav-transform {
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
 @media screen and (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
   #home .image {
     display: none;
   }
@@ -113,12 +125,18 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   #content .m-ord {
     margin-top: 1em;
   }
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   #content .m-ord {
     -webkit-box-ordinal-group: 101;
         -ms-flex-order: 100;
