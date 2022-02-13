@@ -1,3 +1,8 @@
+body {
+    overflow-x: hidden;
+}
+
+
 #home {
 
     .people-illustration {
@@ -56,6 +61,26 @@
         }
     }
 }
+
+#our-class {
+    
+    .container {
+        
+        .thumb {
+            opacity: 0;
+            transform: translate(0, -40px);
+            transition: all .8s;
+
+            &.show {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+    }
+    
+}
+
+
 
 @media screen and (max-width: 425px) {
 

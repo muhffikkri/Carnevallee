@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 #home .people-illustration {
   max-width: 75%;
 }
@@ -48,6 +52,20 @@
 
 #get-your-ticket .social-media div:hover::before {
   width: 100%;
+}
+
+#our-class .container .thumb {
+  opacity: 0;
+  -webkit-transform: translate(0, -40px);
+          transform: translate(0, -40px);
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+#our-class .container .thumb.show {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 @media screen and (max-width: 425px) {
