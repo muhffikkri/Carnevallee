@@ -33,4 +33,4 @@ setTimeout(function () {
     $("#home .container .image img").css("transform", "translate(0, 0)");
     $("#home .container .image img").css("opacity", "1");
 
-}, 1000);
+}, 100);
