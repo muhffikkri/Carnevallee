@@ -8,6 +8,34 @@ body {
         max-width: 75%;
     }
 
+    .container {
+
+        .text {
+
+            h1,
+            p {
+                opacity: 0;
+                transform: translate(-30px, 0);
+                transition: all .8s ease-in-out;
+            }
+
+            a {
+                opacity: 0;
+                transition: all 1.2s;
+            }
+
+        }
+
+        .image img {
+            opacity: 0;
+            transform: translate(20px, 0);
+            transition: all 1s;
+        }
+
+    }
+
+
+
 }
 
 
@@ -149,6 +177,8 @@ body {
     }
 
     #content {
+
+        margin-top: 3em;
 
         .m-ord {
             margin-top: 1em;

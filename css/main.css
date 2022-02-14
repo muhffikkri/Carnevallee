@@ -6,6 +6,29 @@ body {
   max-width: 75%;
 }
 
+#home .container .text h1,
+#home .container .text p {
+  opacity: 0;
+  -webkit-transform: translate(-30px, 0);
+          transform: translate(-30px, 0);
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+#home .container .text a {
+  opacity: 0;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+
+#home .container .image img {
+  opacity: 0;
+  -webkit-transform: translate(20px, 0);
+          transform: translate(20px, 0);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 #content {
   margin-top: 2em;
 }
@@ -127,6 +150,9 @@ body {
 @media screen and (max-width: 576px) {
   body {
     overflow-x: hidden;
+  }
+  #content {
+    margin-top: 3em;
   }
   #content .m-ord {
     margin-top: 1em;
