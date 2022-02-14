@@ -20,23 +20,17 @@ $(window).scroll(function () {
 
 });
 
-function welcomeScreen() {
 
-    $("#home .container .show").each(function (i) {
-        setTimeout(function () {
-            $("#home .container .show").eq(i).css("transform", "translate(0,0)").css("opacity", "1");
-        }, 300 * (i + 1));
-
-
-    });
-}
-
+// home
 setTimeout(function () {
-    welcomeScreen();
-
+    
+    $("#home .container .show").each(function (i) {
+      setTimeout(function () {
+        $("#home .container .show").eq(i).css("transform", "translate(0,0)").css("opacity", "1");
+      }, 300 * (i + 1));
+    });
 
     $("#home .container .image img").css("transform", "translate(0, 0)");
     $("#home .container .image img").css("opacity", "1");
-
 
 }, 1000);
