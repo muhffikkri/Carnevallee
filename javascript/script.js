@@ -20,40 +20,15 @@ $(window).scroll(function () {
 
 });
 
-
-
-for (let i = 1; i <= 4; i++) {
- console.log(       $(`#home .container .text:nth-child(${i})`));
-}
-
-
-
-
-
 function welcomeScreen() {
 
-    for (let i = 1; i <= 4; i++) {
+    $("#home .container .show").each(function (i) {
         setTimeout(function () {
-
-            $(`#home .container .text:nth-child(${i})`).css("transform", "translate(0, 0)");
-            $(`#home .container .text:nth-child(${i})`).css("opacity", "1");
-
-        }, 300 + (i + 200));
+            $("#home .container .show").eq(i).css("transform", "translate(0,0)").css("opacity", "1");
+        }, 300 * (i + 1));
 
 
-    }
-
-
-
-
-    // $("#home .container .text").each(function (i) {
-    //     setTimeout(function () {
-    //         for (let i = 1; i <= 4; i++) {
-    //             $(`#home .container .text:nth-child(${i})`).eq(i).css("transform", "translate(0, 0)");
-    //             $(`#home .container .text:nth-child(${i})`).eq(i).css("opacity", "1");
-    //         }
-    //     }, 300 + (i + 200));
-    // });
+    });
 }
 
 setTimeout(function () {
