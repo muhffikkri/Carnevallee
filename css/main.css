@@ -107,6 +107,21 @@ body {
   width: 100%;
 }
 
+#get-your-ticket .social-media .lightbox {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 999;
+  -webkit-transition: .8s;
+  transition: .8s;
+  text-align: center;
+  padding: 100px;
+}
+
 #our-class .container .thumb {
   opacity: 0;
   -webkit-transform: translate(0, -40px);

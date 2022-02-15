@@ -34,10 +34,7 @@ body {
 
     }
 
-
-
 }
-
 
 #content {
     margin-top: 2em;
@@ -117,7 +114,22 @@ body {
             }
 
         }
+
+        .lightbox {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0);
+            z-index: 999;
+            transition: .8s;
+            text-align: center;
+            padding: 100px;
+        }
     }
+
 }
 
 #our-class {
