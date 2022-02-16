@@ -70,6 +70,7 @@ body {
         }
 
     }
+
 }
 
 #get-your-ticket {
@@ -112,22 +113,9 @@ body {
             &:hover::before {
                 width: 100%;
             }
-
+    
         }
 
-        .lightbox {
-            width: 0;
-            height: 0;
-            overflow: hidden;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0);
-            z-index: 999;
-            transition: .8s;
-            text-align: center;
-            padding: 100px;
-        }
     }
 
 }
@@ -145,9 +133,43 @@ body {
                 opacity: 1;
                 transform: translate(0, 0);
             }
+
         }
+
     }
 
+}
+
+.ticket {
+    display: none;
+
+    .close-btn {
+        position: fixed;
+        top: 2.5em;
+        right: 1em;
+        font-size: 2em;
+        z-index: 9999;
+    }
+
+}
+
+.lightbox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    transition: .8s;
 }
 
 .svg {
@@ -156,6 +178,7 @@ body {
     .collaps {
         position: absolute;
     }
+
 }
 
 .nav-transform {
@@ -166,7 +189,8 @@ body {
     text-decoration: line-through;
 }
 
-// tambahin margin top pas layar udah kecil
+
+// responsive breakpoints
 
 @media screen and (max-width: 425px) {
 
@@ -188,6 +212,10 @@ body {
         }
     }
 
+    .lightbox {
+        padding: 1em;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -197,15 +225,14 @@ body {
     }
 
     #content {
-
         margin-top: 3em;
 
         .m-ord {
             margin-top: 1em;
         }
 
-
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -217,4 +244,15 @@ body {
     #content .m-ord {
         order: 100;
     }
+
+
+    .ticket {
+
+        .close-btn {
+            top: 4.5em;
+            right: .5em;
+
+        }
+    }
+
 }

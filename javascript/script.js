@@ -23,14 +23,26 @@ $(window).scroll(function () {
 
 // home
 setTimeout(function () {
-    
+
     $("#home .container .show").each(function (i) {
-      setTimeout(function () {
-        $("#home .container .show").eq(i).css("transform", "translate(0,0)").css("opacity", "1");
-      }, 300 * (i + 1));
+        setTimeout(function () {
+            $("#home .container .show").eq(i).css("transform", "translate(0,0)").css("opacity", "1");
+        }, 300 * (i + 1));
     });
 
     $("#home .container .image img").css("transform", "translate(0, 0)");
     $("#home .container .image img").css("opacity", "1");
 
 }, 100);
+
+
+// ticket lightbox
+$(".ticket-btn").click(function () {
+    $(".ticket").addClass("lightbox");
+    $("body").css("overflow", "hidden");
+});
+
+$(".close-btn").click(function () {
+    $(".ticket").removeClass("lightbox");
+    $("body").css("overflow", "auto");
+});
