@@ -143,12 +143,14 @@ body {
 .ticket {
     display: none;
 
+
     .close-btn {
         position: fixed;
         top: 2.5em;
         right: 1em;
         font-size: 2em;
         z-index: 9999;
+        cursor: pointer;
     }
 
 }
@@ -169,7 +171,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3em;
-    transition: .8s;
+    transition: background-color 1s .8s;
 }
 
 .svg {

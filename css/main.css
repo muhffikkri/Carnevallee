@@ -131,6 +131,7 @@ body {
   right: 1em;
   font-size: 2em;
   z-index: 9999;
+  cursor: pointer;
 }
 
 .lightbox {
@@ -156,8 +157,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 3em;
-  -webkit-transition: .8s;
-  transition: .8s;
+  -webkit-transition: background-color 1s .8s;
+  transition: background-color 1s .8s;
 }
 
 .svg {
