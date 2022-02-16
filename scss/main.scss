@@ -191,6 +191,16 @@ body {
     text-decoration: line-through;
 }
 
+.barcode-container {
+    width: 10%;
+    position: fixed;
+    bottom: .5em;
+    right: .5em;
+    z-index: 999;
+    opacity: 0;
+    transition: .5s;
+}
+
 
 // responsive breakpoints
 

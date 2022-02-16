@@ -18,6 +18,17 @@ $(window).scroll(function () {
         });
     }
 
+
+    console.log(wScroll);
+    
+    // barcode
+    if(wScroll > 110 & wScroll < $("#footer").offset().top - 800) {
+        $(".barcode-container").css("opacity", "1");
+    } else {
+        $(".barcode-container").css("opacity", "0");
+    }
+    
+
 });
 
 
