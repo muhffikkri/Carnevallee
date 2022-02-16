@@ -219,6 +219,9 @@ body {
   #content .m-ord {
     margin-top: 1em;
   }
+  .barcode-container {
+    width: 15%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -233,6 +236,9 @@ body {
   .ticket .close-btn {
     top: 4.5em;
     right: .5em;
+  }
+  .barcode-container {
+    width: 15%;
   }
 }
 /*# sourceMappingURL=main.css.map */
