@@ -18,8 +18,6 @@ $(window).scroll(function () {
         });
     }
 
-
-    console.log(wScroll);
     
     // barcode
     if(wScroll > 110 & wScroll < $("#footer").offset().top - 800) {
