@@ -143,16 +143,21 @@ body {
 .ticket {
     display: none;
 
+    .ticket-container {
+        position: relative;
+        padding: 4em 2em;
 
-    .close-btn {
-        position: fixed;
-        top: 2.5em;
-        right: 1em;
-        font-size: 2em;
-        z-index: 9999;
-        cursor: pointer;
+        .close-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 2em;
+            z-index: 9999;
+            cursor: pointer;
+        }
+        
     }
-
+    
 }
 
 .lightbox {
@@ -170,8 +175,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3em;
     transition: background-color 1s .8s;
+    padding: 0 .5em;
 }
 
 .svg {
@@ -224,10 +229,6 @@ body {
         }
     }
 
-    .lightbox {
-        padding: 1em;
-    }
-
 }
 
 @media screen and (max-width: 576px) {
@@ -249,6 +250,10 @@ body {
         width: 15%;
     }
 
+    .close-btn {
+        font-size: 1em;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -259,16 +264,6 @@ body {
 
     #content .m-ord {
         order: 100;
-    }
-
-
-    .ticket {
-
-        .close-btn {
-            top: 4.5em;
-            right: .5em;
-
-        }
     }
 
     .barcode-container {
